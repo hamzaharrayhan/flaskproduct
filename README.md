@@ -12,7 +12,7 @@ This application have also been dockerized, which contains 3 images, that are th
 ADD PRODUCT API (METHOD: POST):
 
 /add-product
-set json body: {'name': string, 'price': int, 'desciption': int, 'quantity': int}
+set json body: {'name': string, 'price': int, 'desciption': string, 'quantity': int}
 ![image](https://user-images.githubusercontent.com/61260701/229066182-7f3cefe0-7362-4da8-8b10-c32736164f73.png)
 
 GET PRODUCT API (METHOD: GET):
