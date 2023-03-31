@@ -1,6 +1,10 @@
 # flaskproduct
 Task Assignment for Erajaya
 
+The architecture is using MVC design pattern. MVC provides a clear separation of concerns, which can make it easier to develop, maintain and test the backend code of a web application. The Model represents the data and business logic of the application, the View is responsible for presenting the data to the user, and the Controller handles the user input and updates the Model and View accordingly.
+
+When making this Flask RESTful backend, the Model (Product) can hold the data that is stored in a database using SQLAlchemy ORM and MySQL. The View shows the data in JSON response to clients. The Controller handles requests from clients and sends back the right requested data. Using MVC means that the parts of the code that handle data and rules are separate from the parts that show data to users. This makes it simpler to test and change the code. In summary, using the MVC pattern for a RESTful backend provides a clear separation of concerns and makes the code more modular, easier to test and more maintainable, and therefore, this is a part of clean code architecture.
+
 ADD PRODUCT API:
 ![image](https://user-images.githubusercontent.com/61260701/229066182-7f3cefe0-7362-4da8-8b10-c32736164f73.png)
 
