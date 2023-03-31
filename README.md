@@ -9,13 +9,13 @@ When making this Flask RESTful backend, the Model (Product) can hold the data th
 
 This application have also been dockerized, which contains 3 images, that are the Flask web app, MySQL database, and Redis. For the redis image, it is required to be able to utilize the requirement Flask-Caching using type: RedisCache. The cache is performed in the View layer, so that every request to a route will be cached, and the result is the improvement of request time after the first time request pretty much significant. The caching only performed in the GET requests.
 
-ADD PRODUCT API:
+ADD PRODUCT API (METHOD: POST):
 
 /add-product
 set json body: {'name': string, 'price': int, 'desciption': int, 'quantity': int}
 ![image](https://user-images.githubusercontent.com/61260701/229066182-7f3cefe0-7362-4da8-8b10-c32736164f73.png)
 
-GET PRODUCT API:
+GET PRODUCT API (METHOD: GET):
 
 /products (get all item ascending by id)
 
